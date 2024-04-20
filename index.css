@@ -4,7 +4,7 @@
 }
 .boby{
     height: 100vh;
-    fo
+    
 }
 .main-container{
     display: grid;
@@ -73,5 +73,17 @@
     color: khaki;
     /*grid-column: 4/5;
     grid-row: 4/5;*/
-    grid-area: c8;
+    grid-area: c8;}
+
+@media(max-width:360px){
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,200px);
+        grid-template-areas: initial;
+    }
+    .main-container div{
+        grid-area: initial !important ;
+    }
 }
+
+
